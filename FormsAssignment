@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Class</title>
+</head>
+<body>
+
+    <!-- ---------input------- -->
+    <h2>Sign Up</h2>
+  <form acrion="submit_page.php" method="post">
+      <label for="full_name">First Name</label>
+      <input type="text" id="username" name="username" required>
+      <br>
+      <br>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <br>
+      <label for="password">Password</label>
+      <input type="password"  id="password" name="password" required>
+      <br>
+      <br>
+      <label for="password">Confirm Password</label>
+      <input type="password"  id="password" name="password" required>
+      <br>
+      <br>
+         
+      <!-- -------upload file------ -->
+      <input type="file" name="uploadFile">
+      <br><br>
+
+       
+      <!-- -------radio buttons------ -->
+
+      <label><input type="radio" name="gender" value="male">Male</label>
+      <label><input type="radio" name="gender" value="female">Female</label>
+
+      <!-- ----------checkbox------- -->
+     <p><strong>Favorites</strong></p>
+     <label><input type="checkbox" value="interest" name="politics">Politics</label><br>
+     <label><input type="checkbox" value="interest" name="entertainments">Entertainments</label><br>
+     <label><input type="checkbox" value="interest" name="books">Books</label><br>
+     <label><input type="checkbox" value="interest" name="travel">Travel</label><br>
+
+     <!-- ----------dropdown-------- -->
+     <p><strong>Countries</strong></p>
+     <label for="country">Select your country</label>
+     <select id="country" name="country">
+        <option value="us">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="ca">Canada</option>
+        <option value="ng">Nigeria</option>
+        </select>
+    <br><br>
+        
+        <!-- ------textarea----- -->
+         
+         <label for="comments">Comments:</label>
+         <textarea id="comments" name="comments" rows="7px" cols="30"></textarea>
+         <br><br>
+
+         <label><input type="checkbox" value="interest" name="agreements">Agree to terms and conditions</label>
+            <br><br>
+         <input type="submit" value="submit">
+
+
+         
+    
+      
+  </form>  
+   
+    
+
+</body>
+</html>
